@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
+    @GetMapping("/admin")
+    public String admin() {
+        return "For Admin";
+    }
+
+
     @GetMapping("/index")
     public String index() {
         return "Index page!";
@@ -15,4 +21,6 @@ public class UserController {
     public String dashboard() {
         return "Dashboard page";
     }
+
+
 }
